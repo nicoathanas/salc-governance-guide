@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Southern AZ Regional Governance Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">SALC Guide</a>
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav class="nav-links">
+      <a href="#snapshot">Region Snapshot</a>
+      <a href="#governance">Governance</a>
+      <a href="#municipalities">Municipalities</a>
+      <a href="#key-issues">Key Issues</a>
+      <a href="#meetings">Meetings</a>
+      <a href="#quick-reference">Quick Reference</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">Navigate the Region</p>
+        <h1>Southern Arizona Governance Handbook</h1>
+        <p class="hero-text">Budgets, officials, meetings, and issue maps for Southern Arizona jurisdictions.</p>
+        <div class="button-row">
+          <a class="button primary" href="#snapshot">Open Map</a>
+          <a class="button secondary" href="#municipalities">View Jurisdictions</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h2>Contents</h2>
+        <a href="#municipalities"> Municipalities</a>
+        <a href="#governance">Governance</a>
+        <a href="#key-issues"> Key Issues</a>
+        <a href="#meetings"> Public Meetings</a>
+        <a href="#quick-reference"> Quick Reference</a>
+      </div>
+    </section>
+
+    <section id="snapshot" class="section light-section">
+      <div class="section-heading">
+        <p class="eyebrow">Regional Snapshot</p>
+        <h2>Regional Map</h2>
+        <p>Select a jurisdiction to jump to its officials and budget summary.</p>
+      </div>
+
+      <div class="regional-snapshot-panel">
+        <div class="map-panel">
+          <div class="map-panel-header">
+            <div>
+              <span class="transport-kicker">Interactive Map</span>
+              <h3>Click a jurisdiction</h3>
+            </div>
+            <a class="small-link" href="#municipalities">View all dashboards</a>
+          </div>
+
+          <div class="clickable-map">
+            <img src="images/regional-map.png" alt="Southern Arizona Map">
+
+            <a href="#tucson" class="map-zone tucson" aria-label="View Tucson dashboard"></a>
+            <a href="#south-tucson" class="map-zone south-tucson" aria-label="View South Tucson dashboard"></a>
+            <a href="#marana" class="map-zone marana" aria-label="View Marana dashboard"></a>
+            <a href="#oro-valley" class="map-zone oro-valley" aria-label="View Oro Valley dashboard"></a>
+            <a href="#sahuarita" class="map-zone sahuarita" aria-label="View Sahuarita dashboard"></a>
+            <a href="#pima-county" class="map-zone pima-county" aria-label="View Pima County dashboard"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="governance" class="section governance-section">
+      <div class="section-heading centered">
+        <p class="eyebrow">Governance Flow</p>
+        <h2>How Policy Moves</h2>
+        <p>Select an organization to see its role.</p>
+      </div>
+
+      <div class="governance-layout">
+        <div class="governance-flow-board" aria-label="Interactive Southern Arizona policy flow">
+          <section class="governance-stage setting-row">
+            <div class="stage-heading">
+              <span>01</span>
+              <h3>Sources of Authority</h3>
+              <p>Where laws and budgets begin.</p>
+            </div>
+            <button class="governance-node" type="button" data-stage="Sources of Authority" data-title="Federal Government" data-detail="Passes laws, sets national priorities, allocates funding to states, and sets program regulations." data-moves="Laws, grants, regulations, and funding can shape state laws, state agency rules, and local programs.">
+              <strong>Federal Government</strong>
+              <small>laws, funding, regulations</small>
+            </button>
+            <button class="governance-node" type="button" data-stage="Sources of Authority" data-title="State of Arizona" data-detail="Creates state laws, sets statewide policy, appropriates funding, and oversees state agencies." data-moves="State laws, budget authority, and program rules can shape county, city, agency, and regional decisions.">
+              <strong>State of Arizona</strong>
+              <small>state law, budget, agencies</small>
+            </button>
+            <button class="governance-node" type="button" data-stage="Sources of Authority" data-title="Pima County Board of Supervisors" data-detail="Adopts county ordinances, sets county priorities, approves the county budget, and provides local funding." data-moves="County policy can shape county departments, regional coordination, special districts, and service contracts.">
+              <strong>Pima County BOS</strong>
+              <small>county ordinances and budget</small>
+            </button>
+          </section>
+
+          <section class="governance-stage development-row">
+            <div class="stage-heading">
+              <span>02</span>
+              <h3>Rules and Plans</h3>
+              <p>Where broad direction becomes programs, standards, and regional plans.</p>
+            </div>
+            <button class="governance-node" type="button" data-stage="Rules and Plans" data-title="State Agencies" data-detail="Develop rules and regulations, administer state programs, provide guidance to local governments, and monitor compliance." data-moves="Rules, guidance, and funding can affect local procedures, permits, programs, and service delivery.">
+              <strong>State Agencies</strong>
+              <small>ADOT, ADWR, ADE, ADHS</small>
+            </button>
+            <button class="governance-node" type="button" data-stage="Rules and Plans" data-title="Pima County Departments" data-detail="Develop local policies, set procedures and standards, plan programs and services, and allocate county resources." data-moves="County procedures, contracts, grants, permits, and service plans can guide implementation.">
+              <strong>Pima County Departments</strong>
+              <small>procedures, standards, programs</small>
+            </button>
+            <button class="governance-node" type="button" data-stage="Rules and Plans" data-title="Regional Bodies" data-detail="Coordinate across jurisdictions, develop regional plans, align local priorities, and share data." data-moves="Regional plans and funding recommendations can inform city, town, county, transportation, and special district decisions.">
+              <strong>Regional Bodies</strong>
+              <small>PAG, RTA, planning tables</small>
+            </button>
+          </section>
+
+          <section class="governance-stage implementation-row">
+            <div class="stage-heading">
+              <span>03</span>
+              <h3>Delivery Tables</h3>
+              <p>Where services, permits, programs, contracts, and enforcement happen.</p>
+            </div>
+            <button class="governance-node" type="button" data-stage="Delivery Tables" data-title="County and Special District Entities" data-detail="Implement policies and programs, provide services, enforce local regulations, and manage grants and funding." data-moves="Service delivery, enforcement, infrastructure work, and grants affect residents, businesses, and communities.">
+              <strong>County and Special Districts</strong>
+              <small>services, enforcement, grants</small>
+            </button>
+            <button class="governance-node" type="button" data-stage="Delivery Tables" data-title="Cities and Towns" data-detail="Adopt local ordinances, implement local services, enforce codes, issue permits, and engage residents and businesses." data-moves="Local ordinances, permits, services, infrastructure, and inspections reach residents, businesses, and neighborhoods.">
+              <strong>Cities and Towns</strong>
+              <small>permits, services, codes</small>
+            </button>
+            <button class="governance-node" type="button" data-stage="Delivery Tables" data-title="Nonprofits and Service Partners" data-detail="Deliver programs and services, meet contract or grant requirements, report outcomes, and serve the community." data-moves="Programs, services, reports, and community outcomes can inform funders and public agencies.">
+              <strong>Service Partners</strong>
+              <small>contracts, grants, delivery</small>
+            </button>
+          </section>
+
+          <section class="governance-stage recipient-row">
+            <div class="stage-heading">
+              <span>04</span>
+              <h3>Public Outcomes</h3>
+              <p>Where policy shows up in daily life and community conditions.</p>
+            </div>
+            <button class="governance-node recipient-node" type="button" data-stage="Public Outcomes" data-title="Residents" data-detail="Receive public services, permits, benefits, infrastructure, emergency response, and local protections." data-moves="Residents participate through elections, public meetings, service requests, applications, and public comment.">
+              <strong>Residents</strong>
+              <small>services and benefits</small>
+            </button>
+            <button class="governance-node recipient-node" type="button" data-stage="Public Outcomes" data-title="Businesses" data-detail="Follow regulations and receive permits, infrastructure, workforce programs, inspections, and economic development services." data-moves="Businesses interact through permit applications, compliance, contracts, site selection, and public-private projects.">
+              <strong>Businesses</strong>
+              <small>permits and programs</small>
+            </button>
+            <button class="governance-node recipient-node" type="button" data-stage="Public Outcomes" data-title="Communities" data-detail="See outcomes in safety, infrastructure, health, housing, transportation, education, water, and economic opportunity." data-moves="Community conditions can show where policy is working, stalled, underfunded, or ready for revision.">
+              <strong>Communities</strong>
+              <small>local outcomes</small>
+            </button>
+          </section>
+        </div>
+
+        <aside class="governance-detail-panel" aria-live="polite">
+          <p class="eyebrow" id="governanceDetailStage">Sources of Authority</p>
+          <h3 id="governanceDetailTitle">Federal Government</h3>
+          <p id="governanceDetailText">Passes laws, sets national priorities, allocates funding to states, and sets program regulations.</p>
+          <div class="governance-next-step">
+            <span>what happens next?</span>
+            <p id="governanceDetailMoves">Laws, grants, regulations, and funding move to the State of Arizona and state agencies.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+    
+    <section id="municipalities" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Municipality Dashboards</p>
+        <h2>Jurisdiction Dashboards</h2>
+      </div>
+      <div class="card-grid">
+        <a class="dashboard-card" href="#tucson"><h3>City of Tucson</h3><p>The second-largest city in the state, home to the University of Arizona.</p></a>
+        <a class="dashboard-card" href="#south-tucson"><h3>City of South Tucson</h3><p>An independent, 1.2-square mile city with a distinct political identity.</p></a>
+        <a class="dashboard-card" href="#marana"><h3>Town of Marana</h3><p>A fast growing, geographically diverse town located between the Tortolita and Tucson mountain ranges.</p></a>
+        <a class="dashboard-card" href="#oro-valley"><h3>Town of Oro Valley</h3><p>An upscale suburban town recognized for its tech community and public safety achievements.</p></a>
+        <a class="dashboard-card" href="#sahuarita"><h3>Town of Sahuarita</h3><p>A rapidly growing suburban town, translating to "little Saguaro" in spanish.</p></a>
+        <a class="dashboard-card" href="#pima-county"><h3>Unincorporated Pima County</h3><p>From the Catalina Foothills and Vail to western communities like Ajo and Why.</p></a>
+      </div>
+    </section>
+
+  <section id="tucson" class="section dashboard-section">
+    <div class="dashboard-hero">
+      <p class="eyebrow">Municipality Dashboard</p>
+      <h2>City of Tucson</h2>
+      <a class="small-link" href="#municipalities">Back to dashboards ↑</a>
+    </div>
+
+    <div class="dashboard-layout">
+      <div class="profile-card population-card">
+        <p class="card-label">2025 Census Estimate</p>
+        <div class="big-number">548,371</div>
+      </div>
+      <div class="profile-card budget-summary-card">
+        <p class="card-label">FY2026 Adopted Budget</p>
+        <div class="big-number">$2.41B</div>
+        <p>Adopted total annual budget across all city funds.</p>
+      </div>
+    </div>
+
+    <div class="dashboard-lower">
+      <div class="panel officials-panel">
+        <h3>Key Officials</h3>
+        <a class="official-chip" href="https://www.tucsonaz.gov/Government/Mayor-Council-and-City-Manager" target="_blank" rel="noopener"><span>Mayor</span><strong>Regina Romero</strong></a>
+        <a class="official-chip" href="https://www.tucsonaz.gov/Government/Mayor-Council-and-City-Manager" target="_blank" rel="noopener"><span>Ward 1</span><strong>Lane Santa Cruz</strong></a>
+        <a class="official-chip" href="https://www.tucsonaz.gov/Government/Mayor-Council-and-City-Manager" target="_blank" rel="noopener"><span>Ward 2</span><strong>Paul Cunningham</strong></a>
+        <a class="official-chip" href="https://www.tucsonaz.gov/Government/Mayor-Council-and-City-Manager" target="_blank" rel="noopener"><span>Ward 3</span><strong>Kevin Dahl</strong></a>
+        <a class="official-chip" href="https://www.tucsonaz.gov/Government/Mayor-Council-and-City-Manager" target="_blank" rel="noopener"><span>Ward 4</span><strong>Nikki Lee</strong></a>
+        <a class="official-chip" href="https://www.tucsonaz.gov/Government/Mayor-Council-and-City-Manager" target="_blank" rel="noopener"><span>Ward 5</span><strong>Selina Barajas</strong></a>
+        <a class="official-chip" href="https://www.tucsonaz.gov/Government/Mayor-Council-and-City-Manager" target="_blank" rel="noopener"><span>Ward 6</span><strong>Miranda Schubert</strong></a>
+      </div>
+
+      <div class="panel budget-detail">
+        <p class="eyebrow">Actual Budget Chart</p>
+        <h3>FY2026 Major Spending Lines</h3>
+        <div class="budget-bars">
+          <button class="budget-bar" style="--bar-width:100%"><span>General Fund expenditures</span><strong>$831.8M</strong></button>
+          <button class="budget-bar" style="--bar-width:77%"><span>Capital Improvement Program</span><strong>$639.4M</strong></button>
+          <button class="budget-bar" style="--bar-width:47%"><span>Tucson Water expenditures</span><strong>$387.6M</strong></button>
+          <button class="budget-bar" style="--bar-width:8%"><span>Highway User Revenue Fund</span><strong>$69.5M</strong></button>
+        </div>
+        <div class="dashboard-source-row">
+          <a href="https://www.tucsonaz.gov/files/sharedassets/public/v/1/bsd/documents/finance-documents/fy26-budget-book/3.2-budget-highlights.pdf" target="_blank" rel="noopener">Budget source</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="south-tucson" class="section dashboard-section">
+    <div class="dashboard-hero">
+      <p class="eyebrow">Municipality Dashboard</p>
+      <h2>City of South Tucson</h2>
+      <a class="small-link" href="#municipalities">Back to dashboards ↑</a>
+    </div>
+
+    <div class="dashboard-layout">
+      <div class="profile-card population-card">
+        <p class="card-label">2020 Census</p>
+        <div class="big-number">4,613</div>
+      </div>
+      <div class="profile-card budget-summary-card">
+        <p class="card-label">FY2026 General Fund Expenses</p>
+        <div class="big-number">$7.25M</div>
+        <p>Adopted total annual budget across all town funds.</p>
+      </div>
+    </div>
+
+    <div class="dashboard-lower">
+      <div class="panel officials-panel">
+        <h3>Key Officials</h3>
+        <a class="official-chip" href="https://www.southtucsonaz.gov/citycouncil" target="_blank" rel="noopener"><span>Mayor</span><strong>Roxanna Valenzuela</strong></a>
+        <a class="official-chip" href="https://www.southtucsonaz.gov/citycouncil" target="_blank" rel="noopener"><span>Acting Mayor</span><strong>Pablo Robles</strong></a>
+        <a class="official-chip" href="https://www.southtucsonaz.gov/citycouncil" target="_blank" rel="noopener"><span>Vice Mayor</span><strong>Melissa Brown-Dominguez</strong></a>
+        <a class="official-chip" href="https://www.southtucsonaz.gov/citycouncil" target="_blank" rel="noopener"><span>Council Member</span><strong>Cesar Aguirre</strong></a>
+        <a class="official-chip" href="https://www.southtucsonaz.gov/citycouncil" target="_blank" rel="noopener"><span>Council Member</span><strong>Brian Flagg</strong></a>
+        <a class="official-chip" href="https://www.southtucsonaz.gov/citycouncil" target="_blank" rel="noopener"><span>Council Member</span><strong>Paul Diaz</strong></a>
+        <a class="official-chip" href="https://www.southtucsonaz.gov/citycouncil" target="_blank" rel="noopener"><span>Council Member</span><strong>Dulce Jimenez</strong></a>
+      </div>
+
+      <div class="panel budget-detail">
+        <p class="eyebrow">Actual Budget Chart</p>
+        <h3>FY2026 General Fund Spending</h3>
+        <div class="budget-bars">
+          <button class="budget-bar" style="--bar-width:100%"><span>Police Department</span><strong>$2.42M</strong></button>
+          <button class="budget-bar" style="--bar-width:79%"><span>Non-Departmental</span><strong>$1.90M</strong></button>
+          <button class="budget-bar" style="--bar-width:46%"><span>Fire Department</span><strong>$1.10M</strong></button>
+          <button class="budget-bar" style="--bar-width:17%"><span>City Manager</span><strong>$411K</strong></button>
+          <button class="budget-bar" style="--bar-width:14%"><span>Finance</span><strong>$330K</strong></button>
+          <button class="budget-bar" style="--bar-width:12%"><span>Development Services</span><strong>$298K</strong></button>
+        </div>
+        <div class="dashboard-source-row">
+          <a href="https://www.southtucsonaz.gov/finance/page/annual-budget" target="_blank" rel="noopener">Budget source</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="marana" class="section dashboard-section">
+    <div class="dashboard-hero">
+      <p class="eyebrow">Municipality Dashboard</p>
+      <h2>Town of Marana</h2>
+      <a class="small-link" href="#municipalities">Back to dashboards ↑</a>
+    </div>
+
+    <div class="dashboard-layout">
+      <div class="profile-card population-card">
+        <p class="card-label">2025 Census Estimate</p>
+        <div class="big-number">65,523</div>
+      </div>
+      <div class="profile-card budget-summary-card">
+        <p class="card-label">FY2025-2026 Budget</p>
+        <div class="big-number">$416.2M</div>
+        <p>Adopted total annual budget across all city funds.</p>
+      </div>
+    </div>
+
+    <div class="dashboard-lower">
+      <div class="panel officials-panel">
+        <h3>Key Officials</h3>
+        <a class="official-chip" href="https://www.maranaaz.gov/Council/Council-Bios" target="_blank" rel="noopener"><span>Mayor</span><strong>Jon Post</strong></a>
+        <a class="official-chip" href="https://www.maranaaz.gov/Council/Council-Bios" target="_blank" rel="noopener"><span>Vice Mayor</span><strong>Roxanne Ziegler</strong></a>
+        <a class="official-chip" href="https://www.maranaaz.gov/Council/Council-Bios" target="_blank" rel="noopener"><span>Councilmember</span><strong>Herb Kai</strong></a>
+        <a class="official-chip" href="https://www.maranaaz.gov/Council/Council-Bios" target="_blank" rel="noopener"><span>Councilmember</span><strong>John Officer</strong></a>
+        <a class="official-chip" href="https://www.maranaaz.gov/Council/Council-Bios" target="_blank" rel="noopener"><span>Councilmember</span><strong>Patti Comerford</strong></a>
+        <a class="official-chip" href="https://www.maranaaz.gov/Council/Council-Bios" target="_blank" rel="noopener"><span>Councilmember</span><strong>Patrick Cavanaugh</strong></a>
+        <a class="official-chip" href="https://www.maranaaz.gov/Council/Council-Bios" target="_blank" rel="noopener"><span>Councilmember</span><strong>Teri Murphy</strong></a>
+      </div>
+
+      <div class="panel budget-detail">
+        <p class="eyebrow">Actual Budget Chart</p>
+        <h3>FY2026 Spending by Category</h3>
+        <div class="budget-bars">
+          <button class="budget-bar" style="--bar-width:100%"><span>Capital outlay</span><strong>$271.1M</strong></button>
+          <button class="budget-bar" style="--bar-width:47%"><span>Operating costs</span><strong>$126.1M</strong></button>
+          <button class="budget-bar" style="--bar-width:7%"><span>Debt service</span><strong>$19.0M</strong></button>
+        </div>
+        <div class="dashboard-source-row">
+          <a href="https://www.maranaaz.gov/files/assets/cityofmarana/v/2/finance/documents/town-of-marana-fy-2026-budget-book.pdf" target="_blank" rel="noopener">Budget source</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="oro-valley" class="section dashboard-section">
+    <div class="dashboard-hero">
+      <p class="eyebrow">Municipality Dashboard</p>
+      <h2>Town of Oro Valley</h2>
+      <a class="small-link" href="#municipalities">Back to dashboards ↑</a>
+    </div>
+
+    <div class="dashboard-layout">
+      <div class="profile-card population-card">
+        <p class="card-label">2025 Census Estimate</p>
+        <div class="big-number">48,085</div>
+      </div>
+      <div class="profile-card budget-summary-card">
+        <p class="card-label">FY2025-2026 Adopted</p>
+        <div class="big-number">$151.5M</div>
+        <p>Adopted total annual budget across all city funds.</p>
+      </div>
+    </div>
+
+    <div class="dashboard-lower">
+      <div class="panel officials-panel">
+        <h3>Key Officials</h3>
+        <a class="official-chip" href="https://www.orovalleyaz.gov/Government/Departments/Mayor-and-Council/Elected-Officials" target="_blank" rel="noopener"><span>Mayor</span><strong>Joe Winfield</strong></a>
+        <a class="official-chip" href="https://www.orovalleyaz.gov/Government/Departments/Mayor-and-Council/Elected-Officials" target="_blank" rel="noopener"><span>Vice Mayor</span><strong>Melanie Barrett</strong></a>
+        <a class="official-chip" href="https://www.orovalleyaz.gov/Government/Departments/Mayor-and-Council/Elected-Officials" target="_blank" rel="noopener"><span>Councilmember</span><strong>Joyce Jones-Ivey</strong></a>
+        <a class="official-chip" href="https://www.orovalleyaz.gov/Government/Departments/Mayor-and-Council/Elected-Officials" target="_blank" rel="noopener"><span>Councilmember</span><strong>Josh Nicolson</strong></a>
+        <a class="official-chip" href="https://www.orovalleyaz.gov/Government/Departments/Mayor-and-Council/Elected-Officials" target="_blank" rel="noopener"><span>Councilmember</span><strong>Harry "Mo" Greene II</strong></a>
+        <a class="official-chip" href="https://www.orovalleyaz.gov/Government/Departments/Mayor-and-Council/Elected-Officials" target="_blank" rel="noopener"><span>Councilmember</span><strong>Mary Murphy</strong></a>
+        <a class="official-chip" href="https://www.orovalleyaz.gov/Government/Departments/Mayor-and-Council/Elected-Officials" target="_blank" rel="noopener"><span>Councilmember</span><strong>Elizabeth Robb</strong></a>
+      </div>
+
+      <div class="panel budget-detail">
+        <p class="eyebrow">Actual Budget Chart</p>
+        <h3>FY2026 Spending by Fund</h3>
+        <div class="budget-bars">
+          <button class="budget-bar" style="--bar-width:100%"><span>General Fund</span><strong>$54.6M</strong></button>
+          <button class="budget-bar" style="--bar-width:94%"><span>Enterprise Funds</span><strong>$51.1M</strong></button>
+          <button class="budget-bar" style="--bar-width:36%"><span>Special Revenue Funds</span><strong>$19.5M</strong></button>
+          <button class="budget-bar" style="--bar-width:31%"><span>Capital Projects Funds</span><strong>$16.8M</strong></button>
+          <button class="budget-bar" style="--bar-width:10%"><span>Internal Service Funds</span><strong>$5.4M</strong></button>
+          <button class="budget-bar" style="--bar-width:8%"><span>Debt Service Funds</span><strong>$4.1M</strong></button>
+        </div>
+        <div class="dashboard-source-row">
+          <a href="https://www.orovalleyaz.gov/Government/Departments/Finance" target="_blank" rel="noopener">Budget source</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sahuarita" class="section dashboard-section">
+    <div class="dashboard-hero">
+      <p class="eyebrow">Municipality Dashboard</p>
+      <h2>Town of Sahuarita</h2>
+      <a class="small-link" href="#municipalities">Back to dashboards ↑</a>
+    </div>
+
+    <div class="dashboard-layout">
+      <div class="profile-card population-card">
+        <p class="card-label">2025 Census Estimate</p>
+        <div class="big-number">37,694</div>
+      </div>
+      <div class="profile-card budget-summary-card">
+        <p class="card-label">FY2026 Adopted Budget</p>
+        <div class="big-number">$109.8M</div>
+        <p>Adopted total annual budget across all town funds.</p>
+      </div>
+    </div>
+
+    <div class="dashboard-lower">
+      <div class="panel officials-panel">
+        <h3>Key Officials</h3>
+        <a class="official-chip" href="https://sahuaritaaz.gov/274/Town-Council" target="_blank" rel="noopener"><span>Mayor</span><strong>Tom Murphy</strong></a>
+        <a class="official-chip" href="https://sahuaritaaz.gov/274/Town-Council" target="_blank" rel="noopener"><span>Vice Mayor</span><strong>Kara Egbert</strong></a>
+        <a class="official-chip" href="https://sahuaritaaz.gov/274/Town-Council" target="_blank" rel="noopener"><span>Council Member</span><strong>Deborah Morales</strong></a>
+        <a class="official-chip" href="https://sahuaritaaz.gov/274/Town-Council" target="_blank" rel="noopener"><span>Council Member</span><strong>Dr. Steven Gillespie</strong></a>
+        <a class="official-chip" href="https://sahuaritaaz.gov/274/Town-Council" target="_blank" rel="noopener"><span>Council Member</span><strong>Diana Priolo</strong></a>
+        <a class="official-chip" href="https://sahuaritaaz.gov/274/Town-Council" target="_blank" rel="noopener"><span>Council Member</span><strong>Kim Lisk</strong></a>
+        <a class="official-chip" href="https://sahuaritaaz.gov/274/Town-Council" target="_blank" rel="noopener"><span>Council Member</span><strong>Edgar Lytle</strong></a>
+      </div>
+
+      <div class="panel budget-detail">
+        <p class="eyebrow">Actual Budget Chart</p>
+        <h3>FY2026 Spending by Fund</h3>
+        <div class="budget-bars">
+          <button class="budget-bar" style="--bar-width:100%"><span>General Fund</span><strong>$68.2M</strong></button>
+          <button class="budget-bar" style="--bar-width:27%"><span>Special Revenue Funds</span><strong>$18.2M</strong></button>
+          <button class="budget-bar" style="--bar-width:22%"><span>Capital Projects Fund</span><strong>$14.8M</strong></button>
+          <button class="budget-bar" style="--bar-width:13%"><span>Enterprise Funds Available</span><strong>$8.6M</strong></button>
+        </div>
+        <div class="dashboard-source-row">
+          <a href="https://sahuaritaaz.gov/DocumentCenter/View/12593" target="_blank" rel="noopener">Budget source</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pima-county" class="section dashboard-section">
+    <div class="dashboard-hero">
+      <p class="eyebrow">Municipality Dashboard</p>
+      <h2>Unincorporated Pima County</h2>
+      <a class="small-link" href="#municipalities">Back to dashboards ↑</a>
+    </div>
+
+    <div class="dashboard-layout">
+      <div class="profile-card population-card">
+        <p class="card-label">2025 Census Estimate</p>
+        <div class="big-number">1,074,685</div>
+      </div>
+      <div class="profile-card budget-summary-card">
+        <p class="card-label">FY2025-2026 Budget</p>
+        <div class="big-number">$1.75B</div>
+        <p>Adopted total annual budget across all funds.</p>
+      </div>
+    </div>
+
+    <div class="dashboard-lower">
+      <div class="panel officials-panel">
+        <h3>Key Officials</h3>
+        <a class="official-chip" href="https://www.pima.gov/1309/Board-of-Supervisors" target="_blank" rel="noopener"><span>District 1</span><strong>Rex Scott</strong></a>
+        <a class="official-chip" href="https://www.pima.gov/1309/Board-of-Supervisors" target="_blank" rel="noopener"><span>District 2</span><strong>Matt Heinz</strong></a>
+        <a class="official-chip" href="https://www.pima.gov/1309/Board-of-Supervisors" target="_blank" rel="noopener"><span>District 3</span><strong>Jennifer Allen</strong></a>
+        <a class="official-chip" href="https://www.pima.gov/1309/Board-of-Supervisors" target="_blank" rel="noopener"><span>District 4</span><strong>Steve Christy</strong></a>
+        <a class="official-chip" href="https://www.pima.gov/1309/Board-of-Supervisors" target="_blank" rel="noopener"><span>District 5</span><strong>Andres Cano</strong></a>
+        <a class="official-chip" href="https://www.pima.gov/2490/Departments-Offices" target="_blank" rel="noopener"><span>County Administrator</span><strong>Jan Lesher</strong></a>
+      </div>
+
+      <div class="panel budget-detail">
+        <p class="eyebrow">Actual Budget Chart</p>
+        <h3>FY2026 Spending by Fund</h3>
+        <div class="budget-bars">
+          <button class="budget-bar" style="--bar-width:100%"><span>General Fund</span><strong>$814.1M</strong></button>
+          <button class="budget-bar" style="--bar-width:63%"><span>Special Revenue Funds</span><strong>$510.1M</strong></button>
+          <button class="budget-bar" style="--bar-width:23%"><span>Enterprise Funds</span><strong>$189.2M</strong></button>
+          <button class="budget-bar" style="--bar-width:16%"><span>Capital Projects Fund</span><strong>$132.6M</strong></button>
+          <button class="budget-bar" style="--bar-width:13%"><span>Debt Service Fund</span><strong>$105.9M</strong></button>
+        </div>
+        <div class="dashboard-source-row">
+          <a href="https://content.civicplus.com/api/assets/217c09b8-b67c-434b-b2f9-79add7095a14" target="_blank" rel="noopener">Budget source</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <section id="key-issues" class="section">
+  <div class="section-heading">
+    <p class="eyebrow">Key Issues</p>
+    <h2>Issue Pages</h2>
+    <p>Open a topic for authority maps, policy points, and stakeholder lists.</p>
+  </div>
+
+  <div class="issue-grid">
+    <a href="water.html" class="issue-card">
+      <h3>Water</h3>
+      <strong>Open page →</strong>
+    </a>
+
+    <a href="housing.html" class="issue-card">
+      <h3>Housing</h3>
+      <strong>Open page →</strong>
+    </a>
+
+    <a href="transportation.html" class="issue-card">
+      <h3>Transportation</h3>
+      <strong>Open page →</strong>
+    </a>
+
+    <a href="education.html" class="issue-card">
+      <h3>Education & Workforce </h3>
+      <strong>Open page →</strong>
+    </a>
+
+    <a href="economic-development.html" class="issue-card">
+      <h3>Economic Development</h3>
+      <strong>Open page →</strong>
+    </a>
+
+    <a href="elections.html" class="issue-card">
+      <h3>Elections</h3>
+      <strong>Open calendar →</strong>
+    </a>
+  </div>
+</section>
+    <section id="meetings" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Public Meetings</p>
+        <h2>Where to Find Public Meetings</h2>
+        <p>Agenda pages list exact dates, special sessions, and holiday changes.</p>
+      </div>
+
+      <div class="meeting-directory">
+        <section class="meeting-sector">
+          <div class="meeting-sector-header">
+            <span class="agency-abbr">GOV</span>
+            <h3>Government</h3>
+          </div>
+          <div class="meeting-list">
+            <a class="meeting-row" href="https://www.tucsonaz.gov/Departments/Clerks/Mayor-Council-Agendas" target="_blank" rel="noopener"><strong>Tucson Mayor & Council</strong><span>Weekly</span></a>
+            <a class="meeting-row" href="https://pima.legistar.com/Calendar.aspx" target="_blank" rel="noopener"><strong>Pima County Board of Supervisors</strong><span>Regularly</span></a>
+            <a class="meeting-row" href="https://www.maranaaz.gov/Council/Council-Meetings-Agendas-and-Citizen-Participation" target="_blank" rel="noopener"><strong>Marana Town Council</strong><span>Biweekly</span></a>
+            <a class="meeting-row" href="https://www.orovalleyaz.gov/Government/Mayor-and-Council/Meetings-and-Agendas" target="_blank" rel="noopener"><strong>Oro Valley Town Council</strong><span>Biweekly</span></a>
+            <a class="meeting-row" href="https://sahuaritaaz.gov/129/Agendas-Minutes" target="_blank" rel="noopener"><strong>Sahuarita Town Council</strong><span>Biweekly</span></a>
+            <a class="meeting-row" href="https://www.southtucsonaz.gov/meetings" target="_blank" rel="noopener"><strong>South Tucson Mayor & Council</strong><span>Biweekly</span></a>
+          </div>
+        </section>
+
+        <section class="meeting-sector">
+          <div class="meeting-sector-header">
+            <span class="agency-abbr">H2O</span>
+            <h3>Water</h3>
+          </div>
+          <div class="meeting-list">
+            <a class="meeting-row" href="https://www.azwater.gov/public-meetings" target="_blank" rel="noopener"><strong>Arizona Department of Water Resources</strong><span>As scheduled</span></a>
+            <a class="meeting-row" href="https://www.cap-az.com/board/board-committee-meetings/" target="_blank" rel="noopener"><strong>CAP / CAWCD Board</strong><span>Monthly</span></a>
+            <a class="meeting-row" href="https://www.tucsonaz.gov/Departments/Clerks/Boards-Committees-Commissions" target="_blank" rel="noopener"><strong>Tucson Citizens Water Advisory Committee</strong><span>Monthly</span></a>
+            <a class="meeting-row" href="https://www.orovalleyaz.gov/Government/Mayor-and-Council/Meetings-and-Agendas" target="_blank" rel="noopener"><strong>Oro Valley Water Utility Commission</strong><span>As scheduled</span></a>
+          </div>
+        </section>
+
+        <section class="meeting-sector">
+          <div class="meeting-sector-header">
+            <span class="agency-abbr">TRN</span>
+            <h3>Transportation</h3>
+          </div>
+          <div class="meeting-list">
+            <a class="meeting-row" href="https://pagregion.com/get-involved/events/" target="_blank" rel="noopener"><strong>PAG Regional Council</strong><span>Monthly</span></a>
+            <a class="meeting-row" href="https://rtamobility.com/get-involved/events/" target="_blank" rel="noopener"><strong>RTA Board</strong><span>Monthly</span></a>
+            <a class="meeting-row" href="https://rtamobility.com/get-involved/events/" target="_blank" rel="noopener"><strong>RTA Advisory Committees</strong><span>As scheduled</span></a>
+            <a class="meeting-row" href="https://www.flytucson.com/taa/governance_public_info/taa_meetings_and_public_notices/index.php" target="_blank" rel="noopener"><strong>Tucson Airport Authority Board</strong><span>As scheduled</span></a>
+          </div>
+        </section>
+
+        <section class="meeting-sector">
+          <div class="meeting-sector-header">
+            <span class="agency-abbr">EDU</span>
+            <h3>Education & Workforce</h3>
+          </div>
+          <div class="meeting-list">
+            <a class="meeting-row" href="https://www.tusd1.org/board" target="_blank" rel="noopener"><strong>TUSD Governing Board</strong><span>Regularly</span></a>
+            <a class="meeting-row" href="https://pima.edu/about-pima/leadership-policies/governing-board/board-meetings/" target="_blank" rel="noopener"><strong>Pima Community College Board</strong><span>Monthly</span></a>
+            <a class="meeting-row" href="https://www.azregents.edu/meetings/board" target="_blank" rel="noopener"><strong>Arizona Board of Regents</strong><span>Quarterly</span></a>
+          </div>
+        </section>
+
+        <section class="meeting-sector">
+          <div class="meeting-sector-header">
+            <span class="agency-abbr">ECO</span>
+            <h3>Economic Development</h3>
+          </div>
+          <div class="meeting-list">
+            <a class="meeting-row" href="https://pima.legistar.com/Calendar.aspx" target="_blank" rel="noopener"><strong>Pima County Economic Development Items</strong><span>As scheduled</span></a>
+            <a class="meeting-row" href="https://www.tucsonaz.gov/Government/Meeting-Schedules-and-Agendas" target="_blank" rel="noopener"><strong>City of Tucson Economic Initiatives</strong><span>As scheduled</span></a>
+          </div>
+        </section>
+      </div>
+    </section>
+
+  <section id="quick-reference" class="section quick-section">
+  <div class="section-heading">
+    <p class="eyebrow">Quick Reference</p>
+    <h2>Clickable Acronym Guide</h2>
+    <p>Filter by issue area or search for an acronym or organization name.</p>
+  </div>
+
+  <input id="acronymSearch" class="acronym-search" type="text" placeholder="Search acronyms, organizations, or notes...">
+  <div class="acronym-tabs">
+    <button class="tab-button active" data-filter="all">All</button>
+    <button class="tab-button" data-filter="education">Education</button>
+    <button class="tab-button" data-filter="governance">Governance</button>
+    <button class="tab-button" data-filter="healthcare">Healthcare</button>
+    <button class="tab-button" data-filter="infrastructure">Infrastructure</button>
+    <button class="tab-button" data-filter="innovation">Innovation</button>
+    <button class="tab-button" data-filter="business-orgs">Business Orgs</button>
+    <button class="tab-button" data-filter="other">Other</button>
+  </div>
+
+  <div id="acronymGrid" class="acronym-grid"></div>
+</section>
+
+<script src="script.js"></script>
+  </main>
+</body>
+</html>
